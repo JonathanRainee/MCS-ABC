@@ -110,6 +110,7 @@ public class HomeActivity extends AppCompatActivity {
                         Log.i("minum", "onResponse: "+title);
                         Log.i("bobo", "onResponse: ");
                         items.add(new Item(userId, id, title, body));
+                        ia.setData(items);
 //                        ia.setItems(items);
 //                        ia.notifyDataSetChanged();
                     }catch(Exception E){
