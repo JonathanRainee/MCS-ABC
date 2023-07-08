@@ -16,7 +16,22 @@ import java.util.ArrayList;
 
 public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
 
-    public ArrayList<Item> items = new ArrayList<>();
+
+
+    public static ArrayList<Item> items = new ArrayList<>();
+
+    public static void setData(ArrayList<Item> newData) {
+        items.clear();
+        items.addAll(newData);
+    }
+    public ArrayList<Item> getItems() {
+        return items;
+    }
+
+    public void setItems(ArrayList<Item> items) {
+        this.items = items;
+    }
+
     Context context;
 
     public ItemAdapter(Context ctx){
